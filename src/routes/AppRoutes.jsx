@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 // pages
 import Home from "../pages/Home";
 import Categories from "../pages/Categories";
+import AboutUs from "../pages/AboutUs";
 
 const routes = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const routes = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "/categories", element: <Categories /> },
+      { path: "/about-us", element: <AboutUs /> },
     ],
   },
 ]);

@@ -13,11 +13,20 @@ const Home = () => {
     dispatch(getProducts());
   }, [dispatch]);
 
-  const renderProductsList = records.map((product) => (
-    <Col className="d-flex justify-content-center mb-5" md={3} key={product.id}>
-      <Product {...product} />
-    </Col>
-  ));
+  const renderProductsList =
+    records.length > 0 ? (
+      records.map((product) => (
+        <Col
+          className="d-flex justify-content-center mb-5"
+          md={3}
+          key={product.id}
+        >
+          <Product {...product} />
+        </Col>
+      ))
+    ) : (
+      <p>There is no data to render</p>
+    );
   return <Row>{renderProductsList}</Row>;
 };
 

@@ -31,8 +31,9 @@ const Header = () => {
               <Nav.Link as={Link} to="categories">
                 Categories
               </Nav.Link>
-              <Nav.Link>About us</Nav.Link>
-              <Nav.Link>FAQ</Nav.Link>
+              <Nav.Link as={Link} to="about-us">
+                About us
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link>login</Nav.Link>
