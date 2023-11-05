@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../store/products/productsSlice";
+
 // components
 import { Row, Col } from "react-bootstrap";
 import { Product } from "../components/ecom";
@@ -8,7 +9,6 @@ import { Product } from "../components/ecom";
 const Home = () => {
   const dispatch = useDispatch();
   const { records } = useSelector((state) => state.products);
-
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);

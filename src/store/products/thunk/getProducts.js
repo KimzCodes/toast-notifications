@@ -1,14 +1,13 @@
-import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import getProductsAPI from "../../../services/getProductsAPI";
 
 const getProducts = createAsyncThunk(
   "products/getProducts",
   async (_, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
-      const res = await axios.get("http://localhost:5005/products");
-
-      return res.data;
+      const result = await getProductsAPI();
+      return result;
     } catch (error) {
       return rejectWithValue(error.message);
     }

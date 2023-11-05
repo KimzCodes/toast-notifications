@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Container } from "react-bootstrap/";
-import { Header } from "../components/layout";
+import { Header } from "../../components/layout";
 
 import styles from "./styles.module.css";
 
