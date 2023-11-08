@@ -1,7 +1,7 @@
 import ToastItem from "./ToasTItem";
 
-const ToastList = ({ toasts }) => {
-  const renderToasts = toasts.map((toast) => (
+const ToastList = ({ notifications }) => {
+  const renderToasts = notifications.map((toast) => (
     <ToastItem key={toast.id} {...toast} />
   ));
 

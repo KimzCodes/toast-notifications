@@ -1,5 +1,5 @@
 const initialState = {
-  toasts: [
+  notifications: [
     {
       id: 1,
       type: "info",
@@ -11,6 +11,19 @@ const initialState = {
       type: "success",
       title: "Success",
       message: "Successfully completed",
+    },
+    {
+      id: 3,
+      type: "warning",
+      title: "Warning",
+      message: "Your password will be expired soon",
+    },
+
+    {
+      id: 4,
+      type: "danger",
+      title: "Error",
+      message: "Error from the server",
     },
   ],
 };

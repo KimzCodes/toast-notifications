@@ -2,11 +2,11 @@ import { useSelector } from "react-redux";
 import ToastList from "./ToastList";
 
 const ToastNotifications = () => {
-  const { toasts } = useSelector((state) => state.toasts);
-  if (!toasts.length) return <></>;
+  const { notifications } = useSelector((state) => state.toasts);
+  if (!notifications.length) return <></>;
   return (
     <>
-      <ToastList toasts={toasts} />
+      <ToastList notifications={notifications} />
     </>
   );
 };
