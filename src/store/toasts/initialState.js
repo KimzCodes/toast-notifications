@@ -18,7 +18,6 @@ const initialState = {
       title: "Warning",
       message: "Your password will be expired soon",
     },
-
     {
       id: 4,
       type: "danger",

@@ -4,7 +4,7 @@ const ToastsList = ({ notifications }) => {
   const renderToasts = notifications.map((toast) => (
     <ToastItem key={toast.id} {...toast} />
   ));
-  return <div>{renderToasts}</div>;
+  return <>{renderToasts}</>;
 };
 
 export default ToastsList;
