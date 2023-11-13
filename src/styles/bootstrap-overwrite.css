@@ -1,7 +1,7 @@
-#toastsNotifications > .alert.alert-success,
-.alert.alert-info,
-.alert.alert-warning,
-.alert.alert-danger {
+#toastsNotifications .alert.alert-success,
+#toastsNotifications .alert.alert-info,
+#toastsNotifications .alert.alert-warning,
+#toastsNotifications .alert.alert-danger {
   margin-bottom: 10px;
   padding: 14px;
 }

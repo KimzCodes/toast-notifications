@@ -11,7 +11,7 @@ const ToastsNotifications = () => {
   }
 
   return (
-    <div className={styles.toastsContainer}>
+    <div className={styles.toastsContainer} id="toastsNotifications">
       <ToastsList notifications={notifications} />
     </div>
   );
