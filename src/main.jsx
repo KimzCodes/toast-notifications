@@ -4,6 +4,7 @@ import store from "./store";
 import AppRoutes from "./routes/AppRoutes";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/bootstrap-overwrite.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>

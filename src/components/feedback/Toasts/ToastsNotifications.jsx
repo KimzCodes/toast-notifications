@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import ToastsList from "./ToastsList";
 
+import styles from "./styles.module.css";
+
 const ToastsNotifications = () => {
   const { notifications } = useSelector((state) => state.toasts);
 
@@ -9,7 +11,7 @@ const ToastsNotifications = () => {
   }
 
   return (
-    <div>
+    <div className={styles.toastsContainer}>
       <ToastsList notifications={notifications} />
     </div>
   );
